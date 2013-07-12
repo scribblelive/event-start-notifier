@@ -1,4 +1,4 @@
-ScribbleLive Event Notifier
+ScribbleLive Event Start Notifier
 ===================
 
 **Use this javascript to display a notice on your website when one of your ScribbleLive events has started.**
