@@ -1,0 +1,67 @@
+<html>
+<head>
+    <title>ScribbleLive Event Start Notifier</title>
+    <script type="text/javascript" src="SLEventStartNotifier-v1.js"></script>
+    <style type="text/css">
+	div.Notifier {
+	        width: 300px;
+            border: 1px solid #ccc;
+            font-size: 85%;
+            margin-top: -1px;
+            -webkit-box-shadow: 0 0 8px rgba( 0, 0, 0, 0.3 );
+            -moz-box-shadow: 0 0 8px rgba( 0, 0, 0, 0.3 );
+            box-shadow: 0 0 8px rgba( 0, 0, 0, 0.3 );
+            text-shadow: 0 1px 0 rgba( 255, 255, 255, 0.7 );
+            border-radius: 0 0 2px 2px;
+
+            background: #fff;
+            background-image: linear-gradient(top, rgb(249,249,249), rgb(221,221,221));
+            background-image: -o-linear-gradient(top, rgb(249,249,249), rgb(221,221,221));
+            background-image: -moz-linear-gradient(top, rgb(249,249,249), rgb(221,221,221));
+            background-image: -webkit-linear-gradient(top, rgb(249,249,249), rgb(221,221,221));
+            background-image: -ms-linear-gradient(top, rgb(249,249,249), rgb(221,221,221));
+            background-image: -webkit-gradient(
+                linear,
+                left top,
+                left bottom,
+                color-stop(0, rgb(249,249,249)),
+                color-stop(1, rgb(221,221,221))
+            );
+	}
+	div.Notifier a {
+	        text-decoration: none;
+	        color: #555;
+	        padding: 10px;
+	        display: block;
+	}
+	div.Notifier a:hover {
+	        /*text-decoration: underline;*/
+	        color: #000;
+	}
+	div.Notifier a.CloseNotifier {
+	        font-size: 10px;
+	        position: absolute;
+	        top: 0;
+	        right: 0;
+	        padding: 2px 4px 2px 2px;
+	}
+	</style>
+</head>
+<body>
+
+<h1>ScribbleLive Event Start Notifier</h1>
+
+<script type="text/javascript">
+    var First = new scribbleLive.HomePageNotifier({
+        APIToken: 'YOUR_API_TOKEN',
+        WebsiteId: YOUR_WEBSITE_ID,
+        TimeToStayOpen: 60000,
+        Position: "TopRight",
+        HowOftenToCheck: 10000,
+        ShowCloseButton: true,
+        LinkText: "<strong>[[EventTitle]]</strong> is starting now. Click here to watch live."
+    });
+</script>
+
+</body>
+</html>
